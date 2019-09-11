@@ -1,8 +1,12 @@
 package dev.shreyas.java.designs.gangOfFour.creational;
 
 
-// In Factory pattern, we create an object with hiding the original complexities
-// or creational logic to client and share a common interface.
+/*
+    In Factory pattern, we create an object with hiding the original complexities
+    or creational logic to client and share a common interface.
+
+    A normal factory produces goods; a software factory produces objects.
+ */
 public class FactoryPatternDemo {
     interface Color {
         void paint();

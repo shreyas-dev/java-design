@@ -1,10 +1,18 @@
 package dev.shreyas.java.designs.gangOfFour.creational;
 
 
-// The singleton pattern is a design pattern that restricts the instantiation of a class to one object.
-// It provides a more handy and good way to create an object with it’s life cycle being extended to Application.
-// An example of this is creating a connection to database with a single and only object to
-// avoid any conflicts and maintain it throughout the application.
+/*
+    The singleton pattern is a design pattern that restricts the instantiation of a class to one object.
+    It provides a more handy and good way to create an object with it’s life cycle being extended to Application.
+    An example of this is creating a connection to database with a single and only object to
+    avoid any conflicts and maintain it throughout the application.
+
+    Important consideration:
+    It’s possible to subclass a singleton by making the constructor protected instead of private.This might be suitable
+    under some circumstances. One approach taken in these scenarios is to create a register of singletons of the
+    subclasses and the getInstance method can take in a parameter or use an environment variable to return the desired singleton.
+    The registry then maintains a mapping of string names to singleton objects, which can be accessed as needed.
+ */
 public class SingletonPatternDemo {
 
     // Classic Implementation
